@@ -95,7 +95,7 @@ public class Frac {
     public boolean isEqual(Frac a){
         System.out.println(this.makeshort());
         System.out.println(a.makeshort());
-        return ((this.makeshort())==(a.makeshort()));//не работает
+        return (this.ch==a.ch&&this.zn==a.zn);
     }
     public int compareTo(Frac a){
         int it=this.ch*a.zn-this.zn*a.ch;
